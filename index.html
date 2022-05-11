@@ -1,17 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GoIT - Kurs</title>
   </head>
+
   <body>
-    <h1>Tytol</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cum
-      vitae minima atque soluta iste nam id cumque repellat labore debitis optio
-      velit aliquid, praesentium iure, enim aut in corporis.
-    </p>
+    <header id="top"></header>
+
+    <main>
+      <aside>
+        <ul>
+          <li><a href="#komentarz"></a>Komentarz</li>
+          <li><a href="#akapit">Akapit</a></li>
+          <li><a href="#naglowek">Nagłówek</a></li>
+          <li><a href="#lista">Lista </a></li>
+          <li><a href="#link">Link (Odsyłacz)</a></li>
+        </ul>
+      </aside>
+
+      <article id="komentarz">
+        <h1>Komentarz</h1>
+        <p>
+          Komentarz w kodzie oznaczamy <code>&lt;!-- komentarz --&gt;</code>
+        </p>
+        <p>W VSC zaznaczamy tekst i wciskamy skrót: <code>ctrl+k+c</code></p>
+        <p>
+          Aby zaznaczony tekst nie był już komentarzem w VSC, zaznaczamy go i
+          używamy skrótu:
+          <code>ctrl+k+u</code>
+        </p>
+      </article>
+
+      <article id="akapit">
+        <h1>Akapit <code>&lt;p&gt;</code></h1>
+        <p>
+          Znacznik <code>&lt;p&gt;</code> to podwójny znacznik tekstowy do
+          tworzenia akapitu.
+        </p>
+        <p>
+          Pomiędzy każdym znacznikiem <code>&lt;p&gt;</code> występuje podział
+          lini tekstu.
+        </p>
+        <p>Tutaj mamy 3 znaczniki <code>&lt;p&gt;</code> czyli 3 akapity.</p>
+      </article>
+
+      <article id="naglowek">
+        <h1>Nagłówek <code>&lt;h&gt;</code></h1>
+        <p>
+          Znacznik <code>&lt;h&gt;</code> jest znacznikiem tekstowym sparowanym
+          oznaczającym nagłówek.
+        </p>
+        <p>
+          Mamy 6 znaczników <code>&lt;h&gt;</code>. Począwszy od
+          <code>&lt;h1&gt;</code> i skończywszy na <code>&lt;h6&gt;</code>.
+        </p>
+        <p>Znacznik <code>&lt;h1&gt;</code> jest największy i najważniejszy.</p>
+        <p>
+          Znadznik <code>&lt;h6&gt;</code> jest najmniejszy i najmniej ważny ze
+          wszystkich znaczników <code>&lt;h&gt;</code>.
+        </p>
+        <p>Nie ma więcej znaczników niż 6.</p>
+        <p>
+          Znaczników <code>&lt;h&gt;</code> nie zagnieżdzamy w sobie. Np: do
+          <code>&lt;h1&gt;</code> nie wsadzamy <code>&lt;h2&gt;</code>.
+        </p>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+      </article>
+
+      <article id="lista">
+        <h1>Lista</h1>
+
+        <h2>
+          Znacznik <code>&lt;ol&gt;</code> jest znacznikiem listy i tworzy listę
+          numeryczną.
+        </h2>
+        <p>Znacznik <code>&lt;ol&gt;</code> jest znacznikiem sparowanym.</p>
+        <ol>
+          <li>
+            Znacznik <code>&lt;li&gt;</code> jest zagnieżdżony w znaczniku
+            <code>&lt;ol&gt;</code>.
+          </li>
+          <li>
+            Znacznik <code>&lt;li&gt;</code> jest znaczkiem tekstowym
+            sparowanym.
+          </li>
+          <li>
+            Znacznik <code>&lt;li&gt;</code> jest znacznikiem tworzącym punkt w
+            liście.
+          </li>
+          <li>Ile znaczników <code>&lt;li&gt;</code> tyle punktów w liście.</li>
+        </ol>
+
+        <h2>
+          Znacznik <code>&lt;ul&gt;</code> jest znacznikiem listy i tworzy listę
+          punktową.
+        </h2>
+        <p>
+          Lista <code>&lt;ul&gt;</code> również wykorzystywana jest w tworzeniu
+          menu nawigacyjnego i jest to standard. Oczywiście nie musimy tak
+          robić. Można menu wykonać inaczej. Ale tak się przyjęło że tak powinno
+          się robić.
+        </p>
+        <ul>
+          <li>Punkt 1</li>
+          <li>Punkt 2</li>
+          <li>Punkt 3</li>
+        </ul>
+
+        <h2>Atrybut <code>type="rodzaj numeracji"</code>.</h2>
+        <ul>
+          <li>"1" - (domyślny) numeracja według liczb arabskich.</li>
+          <li>"I" - numeracja według liczb rzymskich.</li>
+          <li>"i" - numeracja według liczb rzymskich.</li>
+          <li>"a" - numeracja według małych liter.</li>
+          <li>"A" - numeracja według dużych liter.</li>
+        </ul>
+
+        <h2>Zagnieżdzanie listy.</h2>
+        <ul>
+          <li>
+            element 1
+            <ul>
+              <li>lista zagnieżdżona w element 1.</li>
+              <li>
+                zagnieżdżamy przez ponowne użycie znacznika
+                <code>&lt;ul&gt;</code> w znaczniky <code>&lt;li&gt;</code>.
+              </li>
+              <li>
+                nigdy nie możemy pod znacznikiem <code>&lt;ul&gt;</code> użyć
+                kolejnego znacnzika <code>&lt;ul&gt;</code>.
+              </li>
+              <li>
+                znacnzik <code>&lt;ul&gt;</code> może mieć pod sobą tylko i
+                wyłącznie znacznik pozycji lini <code>&lt;li&gt;</code>
+              </li>
+              <li>
+                W menu podlistą może być podkategoria np telewizory w sprzęcie
+                agd.
+              </li>
+            </ul>
+          </li>
+          <li>element 2</li>
+          <li>element 3</li>
+        </ul>
+      </article>
+      <article id="link">
+        <h2>Link (Odsyłacz) <code>&lt;a&gt;</code></h2>
+        <p>Znacznik <code>&lt;a&gt;</code> jest to link do innej strony</p>
+        <p>
+          Znacznik <code>&lt;a&gt;</code> posiada atrybut
+          <code>href="link strony"</code>. Np.
+          <code>&lt;a href="https://google.com"&gt;</code>
+        </p>
+        <p>
+          Znacznik <code>&lt;a&gt;</code> jest znacznikiem sparowanym i należy
+          go zamknąc znacznikiem <code>&lt;/a&gt;</code> i wstawić pomiędzy
+          tekst bądź inny element który klikamy.
+        </p>
+        <p>
+          Np. <code>&lt;a href="https://google.com"&gt;link&lt;/a&gt;</code>
+        </p>
+        <p>
+          Link do strony google.com: <a href="https://google.com">link</a> - ta
+          strona otworzy się w tym samym oknie.
+        </p>
+        <p>
+          Aby strona otwierała się w nowym oknie trzeba dodać atrybut
+          <code>target="_blank"</code>
+        </p>
+        <p>
+          Link do strony google.com otwierający się w nowej zakładce:
+          <a href="https://google.com" target="_blank">link</a>
+        </p>
+      </article>
+    </main>
+
+    <footer id="bottom"></footer>
   </body>
 </html>
